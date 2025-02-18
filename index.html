@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="todolist.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <h2 class="main-title">Todo List</h2>
+    <section id="todo-head">
+        <button onclick="getTodoList()">Get Todo</button>
+    </section>
+    <div class="loader" id="loader"></div>
+
+    <div id="accordion-container"></div>
+
+    <!-- <script>
+        function getTodoList () {
+            const todolist = fetch('https://jsonplaceholder.typicode.com/todos')
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error('Error:', error));
+            console.log(todolist);
+        }
+        
+    </script> -->
+</body>
+</html>
